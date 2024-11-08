@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaMapMarkerAlt, FaStar, FaRegClock, FaArrowLeft } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaStar, FaRegClock } from 'react-icons/fa'
 import ActiviteImage from '../assets/activities.png'
 import X from '../assets/X.png'
 
@@ -30,7 +30,7 @@ const AttractionCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }
     }, [refreshTrigger]);
 
     return (
-        <div className="p-6 bg-[#0054E4] my-10 md:mx-8 mx-3 rounded-md">
+        <div className="p-6 bg-[#0054E4] my-10  mx-3 rounded-md">
             <div className="flex justify-between mb-5">
             <div className="flex items-center">
   <img src={ActiviteImage} alt="" className="mr-4 w-6 h-6 object-contain" />
