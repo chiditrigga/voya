@@ -33,7 +33,7 @@ const HotelCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }> = (
   }, [refreshTrigger]);
 
   return (
-    <div className="p-6 bg-[#344054] my-10 md:mx-8 mx-3 rounded-md">
+    <div className="md:p-6 p-2 bg-[#344054] my-10  md:mx-3 rounded-md">
       <div className="flex justify-between mb-5">
         <div className="flex items-center">
           <img
@@ -51,13 +51,13 @@ const HotelCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }> = (
 
       {savedHotels.length > 0 ? (
         savedHotels.map((hotel, index) => (
-          <div className="flex gap-0 mb-4" key={index}>
+          <div className="md:flex gap-0 mb-4" key={index}>
             <div className="w-full p-4 border rounded-l-md shadow-sm bg-gray-50">
               <div className="flex flex-col sm:flex-row">
                 <img
                   src={hotel.property.photoUrls[0]}
                   alt={hotel.name || "Hotel"}
-                  className="md:w-56 rounded-md object-cover mb-4 md:mb-0"
+                  className="md:w-56  rounded-md object-cover mb-4 md:mb-0"
                 />
                 <div className="flex-1 sm:ml-4">
                   <div className="flex justify-between items-center mb-2">
@@ -99,8 +99,8 @@ const HotelCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }> = (
                   </div>
 
                   <div className="border-y border-[#E4E7EC] w-full text-lg text-[#647995] py-2 mt-2">
-                    <div className="flex justify-between pb-3">
-                      <div className="flex gap-x-3">
+                    <div className="lg:flex justify-between pb-3">
+                      <div className="lg:flex gap-x-3">
                         <span>Facilities:</span>
                         <span className="flex items-start space-x-2">
                           <img src={Pool} alt="calendar" className="w-6 h-6" />

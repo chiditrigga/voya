@@ -30,7 +30,7 @@ const AttractionCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }
     }, [refreshTrigger]);
 
     return (
-        <div className="p-6 bg-[#0054E4] my-10  mx-3 rounded-md">
+        <div className="md:p-6 p-2 bg-[#0054E4] my-10  md:mx-3 rounded-md">
             <div className="flex justify-between mb-5">
             <div className="flex items-center">
   <img src={ActiviteImage} alt="" className="mr-4 w-6 h-6 object-contain" />
@@ -50,15 +50,16 @@ const AttractionCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }
     
             {savedAttractions.length > 0 ? (
   savedAttractions.map((attraction, index) => (
-    <div className="flex gap-0 md:gap-0 mb-4 " key={index}>
+    <div className="md:flex gap-0 mb-4" key={index}>
       {/* Main attraction content */}
       <div className=" w-full  p-4 border rounded-l-md shadow-sm bg-gray-50">
         <div className="flex flex-col sm:flex-row">
           <img
             src={attraction.primaryPhoto?.small || "/fallback-image.png"}
             alt={attraction.name || "Activity"}
-            className="md:w-56 rounded-md object-cover mb-4 md:mb-0"
-          />
+            className="md:w-56  rounded-md object-cover mb-4 md:mb-0"
+                />
+          
 
           <div className="flex-1 sm:ml-4">
             <div className="flex justify-between items-center mb-2">
@@ -90,8 +91,8 @@ const AttractionCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }
             </div>
 
             <div className="border-y border-[#E4E7EC] w-full text-lg text-[#647995] py-2 mt-2">
-              <div className="flex justify-between pb-3">
-                <div className="flex gap-x-3">
+              <div className="md:flex justify-between pb-3">
+                <div className="md:flex md:gap-x-1 xl:gap-x-3">
                   <span>What's Included:</span>
                   <span>Admission to the Empire State Building</span>
                   <span className="text-[#0D6EFD]">See more</span>

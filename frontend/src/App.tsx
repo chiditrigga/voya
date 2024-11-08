@@ -51,9 +51,12 @@ const App: React.FC = () => {
 
         <Sidebar />
 
-        <div className="App bg-white  flex-1 p-6 xl:ml-64 mt-14 mx-3">
-          <img src={Banner} className="w-full" alt="" />
-          <div className="flex justify-between">
+        <div className="App bg-[#F0F2F5]  flex-1  lg:p-4 xl:p-6 xl:ml-64 px-2 mt-14 w-screen md:mx-3 my-5">
+          <div className="bg-white md:p-10 lg:p-3">
+
+        
+          <img src={Banner} className="w-full mb-5" alt="" />
+          <div className="flex justify-between my-3">
             <div className="flex items-center bg-[#F5E4CE] px-2 py-1 rounded-md">
               <span role="img" aria-label="calendar" className="mr-1">
                 📅
@@ -66,16 +69,16 @@ const App: React.FC = () => {
             <div>good</div>
           </div>
           <div className="flex justify-between">
-            <div className="text-[#000000] font-semibold text-3xl">
+            <div className="text-[#000000] font-semibold text-xl md:text-3xl">
               Bahamas Family Trip <br />{" "}
-              <span className="text-lg font-medium text-[#676E7E]">
+              <span className="md:text-lg font-medium text-[#676E7E]">
                 New York, United States of America | Solo Trip
               </span>
             </div>
             <div>dd</div>
           </div>
 
-          <div className="md:flex space-x-2 m-7">
+          <div className="flex flex-col md:flex-row md:space-x-2 gap-y-4 my-7">
             <Card
               title="Activities"
               description="Build, personalize, and optimize your itineraries with our trip planner."
@@ -91,7 +94,7 @@ const App: React.FC = () => {
               description="Build, personalize, and optimize your itineraries with our trip planner."
               buttonLabel="Add Hotels"
               onButtonClick={openHotelModal}
-              bgColor="bg-blue-100"
+              bgColor="bg-[#E7F0FF]"
               textColor="text-black"
               btcolor="bg-[#0D6EFD]"
               btext="text-white"
@@ -114,7 +117,7 @@ const App: React.FC = () => {
             <AttractionSearch onClose={closeAttractionModal} />
           )}
 
-          <div className="ms-7">
+          <div className="">
             {" "}
             <h3 className="text-[#1D2433] text-2xl font-semibold">
               Trip itineraries
@@ -123,6 +126,8 @@ const App: React.FC = () => {
               Your trip itineraries are placed here
             </p>{" "}
           </div>
+          </div>
+          <div className="bg-white pb-4">
           <FlightCard
             refreshTrigger={refreshTrigger}
             onButtonClick={openFlightModal}
@@ -135,6 +140,8 @@ const App: React.FC = () => {
             refreshTrigger={refreshTrigger}
             onButtonClick={openAttractionModal}
           />
+          </div>
+         
         </div>
       </div>
     </>

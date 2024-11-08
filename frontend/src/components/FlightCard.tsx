@@ -37,7 +37,7 @@ const FlightCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }> = 
      
     }, [refreshTrigger]);
   return (
-    <div className="p-6 bg-[#F0F2F5] mb-10 md:mx-8 mx-3 rounded-md">
+    <div className="p-6 bg-[#F0F2F5] mb-10 mx-3   rounded-md">
     <div className="flex justify-between mb-5">
       <div className="flex items-center">
         <img
@@ -56,7 +56,7 @@ const FlightCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }> = 
     {savedFlights.length > 0 ? (
       savedFlights.map((airline, index) => (
         <div className="flex gap-0 mb-4" key={index}>
-          <div className="w-full p-4 border rounded-l-md shadow-sm bg-gray-50">
+          <div className="w-full px-2 border rounded-l-md shadow-sm bg-gray-50">
             <div className="flex md:flex-col flex-col">
               <img
                 src={airline.logoUrl}

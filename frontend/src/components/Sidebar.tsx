@@ -4,7 +4,7 @@ import { MdOutlineAirplaneTicket } from 'react-icons/md';
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="hidden lg:flex flex-col fixed top-20 left-0 h-full w-64 bg-white shadow-lg p-5">
+    <div className="hidden xl:flex flex-col fixed top-20 left-0 h-full w-64 ms-3 bg-white shadow-lg p-5">
       <nav className="flex flex-col space-y-6">
         <div className="flex items-center space-x-4">
           <MdOutlineAirplaneTicket size={24} />

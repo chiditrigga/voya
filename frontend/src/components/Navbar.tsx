@@ -11,8 +11,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md fixed">
-      <div className="w-screen px-6 py-2 flex justify-between items-center">
+    <nav className="bg-white shadow-md fixed w-full">
+      <div className="w-full px-3 xl:px-6 py-2 flex justify-between items-center">
         {/* Logo and Search */}
         <div className="flex items-center space-x-4">
           <div className="text-blue-600 font-bold text-2xl">Go</div>
@@ -27,36 +27,36 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Links for larger screens */}
-        <div className="hidden md:flex space-x-3 items-center">
-          <a href="#" className="flex items-center text-gray-700 hover:text-blue-600">
-            <FaHome className="mr-1" />
+        <div className="hidden lg:flex lg:space-x-3 xl:space-x-7 items-center">
+          <a href="#" className="  items-center text-gray-700 hover:text-blue-600">
+            <FaHome className=" mx-auto" />
             Home
           </a>
-          <a href="#" className="flex items-center text-gray-700 hover:text-blue-600">
-            <FaWallet className="mr-1" />
+          <a href="#" className=" items-center text-gray-700 hover:text-blue-600">
+            <FaWallet className="mx-auto" />
             Wallet
           </a>
-          <a href="#" className="flex items-center text-gray-700 hover:text-blue-600 font-semibold">
-            <FaListAlt className="mr-1" />
+          <a href="#" className=" items-center text-gray-700 hover:text-blue-600 font-semibold">
+            <FaListAlt className="mx-auto" />
             Plan a trip
           </a>
-          <a href="#" className="flex items-center text-gray-700 hover:text-blue-600">
-            <FaGift className="mr-1" />
+          <a href="#" className=" items-center text-gray-700 hover:text-blue-600">
+            <FaGift className="mx-auto" />
             Commission for life
           </a>
-          <button className="bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600">
+          <button className="bg-blue-500 text-white px-2 xl:px-4 py-1 rounded-lg hover:bg-blue-600">
             Subscribe
           </button>
-          <a href="#" className="flex items-center text-gray-700 hover:text-blue-600">
-            <FaBell className="mr-1" />
+          <a href="#" className=" items-center text-gray-700 hover:text-blue-600">
+            <FaBell className="mx-auto" />
             Notification
           </a>
-          <a href="#" className="flex items-center text-gray-700 hover:text-blue-600">
-            <FaShoppingCart className="mr-1" />
+          <a href="#" className=" items-center text-gray-700 hover:text-blue-600">
+            <FaShoppingCart className="mx-auto" />
             Carts
           </a>
-          <a href="#" className="flex items-center text-gray-700 hover:text-blue-600">
-            <FaPlus className="mr-1" />
+          <a href="#" className=" items-center text-gray-700 hover:text-blue-600">
+            <FaPlus className="mx-auto" />
             Create
           </a>
           <div className="flex items-center space-x-1">
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={toggleMenu}>
             <HiMenu className="text-2xl text-gray-700" />
           </button>
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="lg:hidden bg-white border-t">
           <div className="p-4 space-y-2">
             <a href="#" className="flex items-center text-gray-700 hover:text-blue-600">
               <FaHome className="mr-1" />
