@@ -124,7 +124,7 @@ const FlightSearch: React.FC<FlightSearchProps> = ({ onClose }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
       <div
         ref={modalRef}
-        className="bg-white p-8 rounded-lg shadow-xl w-full max-w-4xl h-[80vh] mx-4 overflow-hidden"
+        className="bg-white p-8 rounded-lg shadow-xl w-full max-w-4xl h-[95vh] mx-4 overflow-hidden"
       >
         <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">
           Flight Search
@@ -175,7 +175,7 @@ const FlightSearch: React.FC<FlightSearchProps> = ({ onClose }) => {
         ) : error ? (
           <p className="text-red-500 text-center">{error}</p>
         ) : airlines.length > 0 ? (
-          <div className="mt-1 h-72 overflow-y-auto">
+          <div className="mt-1 h-96 overflow-y-auto">
             <h3 className="text-xl font-semibold mb-2">Available Flights</h3>
             <div className="space-y-4">
               {airlines.map((airline) => (

@@ -130,7 +130,7 @@ const HotelSearch: React.FC<HotelSearchProps> = ({ onClose }) => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
         <div
             ref={modalRef}
-            className="bg-white p-8 rounded-lg shadow-xl w-full max-w-4xl h-[80vh] mx-4 overflow-hidden"
+            className="bg-white p-8 rounded-lg shadow-xl w-full max-w-4xl h-[95vh] mx-4 overflow-hidden"
         >
             <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">Hotel Search</h2>
 
@@ -180,7 +180,7 @@ const HotelSearch: React.FC<HotelSearchProps> = ({ onClose }) => {
 ) : error ? (
     <p className="text-red-500 text-center">{error}</p>
 ) : (
-    <div className="mt-4 h-[50vh] overflow-y-auto">
+    <div className="mt-4 h-96 overflow-y-auto">
         <h3 className="text-xl font-semibold mb-2 text-gray-800">Available Hotels</h3>
         <div className="space-y-4">
             {hotels.length > 0 ? (
