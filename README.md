@@ -46,3 +46,15 @@ Voya is a travel itinerary platform built to help users discover, plan, and orga
    ```bash
     npm start
 
+   
+
+## Usage
+
+- **Search for Destinations**: Use the search functionality to find accommodations and attractions in a specific location.
+- **Create an Itinerary**:Add hotels, activities, and attractions to your itinerary.
+- **Save and Access Your Itinerary**:Save itineraries for future reference, stored in the browser's local storage and accessible via your user profile. This allows users to retrieve 
+    their itineraries even after closing the browser, as long as local storage is not cleared.
+  
+## Api-reference
+   - **Booking API**: Uses endpoints for searching hotels, popular destinations, and activities. Ensure your RapidAPI key is set in the .env file.
+  
