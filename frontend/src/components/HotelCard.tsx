@@ -111,7 +111,7 @@ const HotelCard: React.FC<ChildComponentProps & { refreshTrigger: boolean }> = (
                           <span>Bar</span>
                         </span>
                       </div>
-                      <span className="flex items-start space-x-1">
+                      <span className="flex items-start space-x-4">
                         <img src={Calendar} alt="pool" className="w-6 h-6" />
                         <span>Check In: 20-04-2024</span>
                         <img src={Calendar} alt="pool" className="w-6 h-6" />
