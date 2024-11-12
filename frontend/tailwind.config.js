@@ -16,7 +16,8 @@ export default {
         ...Object.fromEntries(
           Object.entries(defaultTheme.fontSize).map(([key, value]) => {
             const [fontSize, options] = Array.isArray(value) ? value : [value];
-            const scaledSize = parseFloat(fontSize) * 0.9 + 'rem';
+            // Reduce font size by 30% (multiply by 0.7)
+            const scaledSize = parseFloat(fontSize) * 0.7 + 'rem';
             return [key, [scaledSize, options]];
           })
         ),
