@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
             href="#"
             className="  items-center text-gray-700 hover:text-blue-600"
           >
-            <img src={Home} alt="home" className="w-[1rem] mx-auto" />
+            <img src={Home} alt="home" className="w-6 mx-auto" />
             Home
           </a>
           <a
