@@ -6,4 +6,6 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background: #F0F2F5;
+    transform: none !important;
+    zoom: 1 !important;
   }
